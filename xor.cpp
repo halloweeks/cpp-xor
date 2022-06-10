@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string.h>
 
-#define XOR 0x79
+#define XOR_KEY 0x79
 
 std::string xor_crypto(std::string str) {
 	std::string output = str;
 	for (int i = 0; i < str.size(); i++) {
-		output[i] = str[i] ^ XOR;
+		output[i] = str[i] ^ XOR_KEY;
 	}
 	return output;
 }
